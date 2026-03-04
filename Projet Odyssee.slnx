@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 ﻿<Solution>
   <Project Path="Assembly-CSharp-Editor.csproj" />
   <Project Path="Assembly-CSharp.csproj" />
 </Solution>
+=======
+﻿<Solution>
+  <Project Path="Assembly-CSharp-Editor.csproj" />
+  <Project Path="Assembly-CSharp.csproj" />
+</Solution>
+>>>>>>> 01fcaadd073617c2321181f28e912e2e41bcfcbe
