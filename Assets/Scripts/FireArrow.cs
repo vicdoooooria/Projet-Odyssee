@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BulletController : MonoBehaviour
+public class TridentController : MonoBehaviour
 {
 
     public float speed;
@@ -16,11 +16,11 @@ public class BulletController : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-            // kill ennemy
+            // kill enemy
             Destroy(collision.gameObject);
-            // kill bullet
+            // kill trident
             Destroy(this.gameObject);
         }
     }
 }
-// rajouter un nombre maximal de tire par seconde
+// rajouter un nombre maximal de tirs par seconde
