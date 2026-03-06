@@ -13,7 +13,7 @@ public class FireArrow : MonoBehaviour
 
     void Update()
     {
-        transform.position += transform.forward * speed * Time.deltaTime;
+        this.transform.position -= Vector3.forward * speed * Time.deltaTime;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -23,6 +23,5 @@ public class FireArrow : MonoBehaviour
             Destroy(collision.gameObject);
             Destroy(gameObject);
         }
-
     }
 }
