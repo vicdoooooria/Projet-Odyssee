@@ -1,10 +1,16 @@
 using UnityEngine;
 
-public class TridentController : MonoBehaviour
+public class FireArrow : MonoBehaviour
 {
 
     public float speed;
+    private AudioSource audioSource;
 
+    void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -22,5 +28,6 @@ public class TridentController : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+    
 }
 // rajouter un nombre maximal de tirs par seconde

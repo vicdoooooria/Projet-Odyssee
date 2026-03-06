@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8999367542868017466}
   - component: {fileID: 8198434244063130576}
   - component: {fileID: -932245269330865028}
-  - component: {fileID: -5209802814563394164}
   - component: {fileID: -3479952105798790757}
+  - component: {fileID: 6322446340477139293}
   m_Layer: 0
   m_Name: PP_Theme_09_Spear_005
   m_TagString: Untagged
@@ -165,18 +165,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.32484007, y: 1.9666615, z: 0.10054794}
   m_Center: {x: 0.004588738, y: -0.00032028556, z: -0.005388668}
---- !u!114 &-5209802814563394164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4115183322126277114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb4a4955d62b66e4b8547a0814220354, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HarpoonSound
 --- !u!82 &-3479952105798790757
 AudioSource:
   m_ObjectHideFlags: 0
@@ -274,3 +262,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6322446340477139293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4115183322126277114}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e42f6d6a054e924e82c95f0f93fe667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FireArrow
+  speed: -10
