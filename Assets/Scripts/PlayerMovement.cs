@@ -17,10 +17,13 @@ public class PlayerMovement : MonoBehaviour
 
         this.transform.position += tempPos * speed * Time.deltaTime;
 
+        this.transform.position = new Vector3(Mathf.Clamp(this.transform.position.x, -10, 10), this.transform.position.y, this.transform.position.z);
+
+
         if (fireAction.action.triggered)
         {
             print("Fire pressed");
-            Instantiate(bulletPrefab, this.transform.position, Quaternion.identity);
+            GameObject projectileSpawned = Instantiate(bulletPrefab, this.transform.position, Quaternion.Euler(-90, 0, 0));
         }
     }
 }
