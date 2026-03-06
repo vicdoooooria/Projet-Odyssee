@@ -6,12 +6,15 @@ public class FireArrow : MonoBehaviour
     public float speed;
     private AudioSource audioSource;
 
+<<<<<<< HEAD
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.Play();
     }
     // Update is called once per frame
+=======
+>>>>>>> 0d08fe3fae5ef3af3e6b541041b1830c43e76592
     void Update()
     {
         this.transform.position += Vector3.forward * speed * Time.deltaTime;
@@ -22,9 +25,7 @@ public class FireArrow : MonoBehaviour
 
         if (collision.gameObject.tag == "Enemy")
         {
-            // kill enemy
             Destroy(collision.gameObject);
-            // kill trident
             Destroy(this.gameObject);
         }
     }
