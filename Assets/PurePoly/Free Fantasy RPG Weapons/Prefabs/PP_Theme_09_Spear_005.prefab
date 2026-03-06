@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8198434244063130576}
   - component: {fileID: -932245269330865028}
   - component: {fileID: -3479952105798790757}
-  - component: {fileID: 6322446340477139293}
+  - component: {fileID: -9117116740308837111}
   m_Layer: 0
   m_Name: PP_Theme_09_Spear_005
   m_TagString: Untagged
@@ -262,7 +262,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &6322446340477139293
+--- !u!114 &-9117116740308837111
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -274,4 +274,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e42f6d6a054e924e82c95f0f93fe667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireArrow
-  speed: -10
+  speed: 30
