@@ -1357,10 +1357,10 @@ GameObject:
   - component: {fileID: 3657304469054912397}
   - component: {fileID: 2024992562136029748}
   - component: {fileID: -10753819035940863}
-  - component: {fileID: -3555114238321614382}
+  - component: {fileID: 6980823008714216951}
   m_Layer: 0
   m_Name: Fish_6_v1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1438,25 +1438,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FishMovement
   cooldown: 0
-  speed: 15
---- !u!114 &-3555114238321614382
-MonoBehaviour:
+  speed: 10
+--- !u!54 &6980823008714216951
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4467626735616805598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89d8ec2e00a03364d8643dde78199671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
-  enemyPrefab: {fileID: 4467626735616805598}
-  posY: -30
-  maxPosX: 25.2
-  minPosX: -11.94
-  height: -10.17
-  cooldown: 5
+  serializedVersion: 5
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &4657401458564767184
 GameObject:
   m_ObjectHideFlags: 0

@@ -22,7 +22,6 @@ public class FishMovement : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Boat"))
         {
-            // infliger des dégâts au bateau
             BoatHealth boat = collision.gameObject.GetComponent<BoatHealth>();
 
             if (boat != null)
