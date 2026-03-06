@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 430122714511805669}
   - component: {fileID: 2458100207902881839}
   - component: {fileID: 8999367542868017466}
-  - component: {fileID: -6098597038723052604}
   - component: {fileID: 8198434244063130576}
   - component: {fileID: -932245269330865028}
   m_Layer: 0
@@ -116,19 +115,6 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 30155490101907264, guid: 6cc200a1c3a24034695eea18d310463e, type: 3}
---- !u!114 &-6098597038723052604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4115183322126277114}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e42f6d6a054e924e82c95f0f93fe667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::BulletController
-  speed: -20
 --- !u!54 &8198434244063130576
 Rigidbody:
   m_ObjectHideFlags: 0
