@@ -1532,7 +1532,6 @@ GameObject:
   - component: {fileID: 1691846197}
   - component: {fileID: 1691846198}
   - component: {fileID: 1691846199}
-  - component: {fileID: 1691846200}
   m_Layer: 0
   m_Name: boat
   m_TagString: Untagged
@@ -1549,7 +1548,7 @@ Transform:
   m_GameObject: {fileID: 1691846196}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5, y: -9.81, z: 0.1}
+  m_LocalPosition: {x: -1.5, y: -9.81, z: 7.16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1591,19 +1590,6 @@ MonoBehaviour:
   force: 15
   clickAction: {fileID: 7181850782591092221, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   mousePositionAction: {fileID: -5827170116326498348, guid: 052faaac586de48259a63d0c4782560b, type: 3}
---- !u!114 &1691846200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1691846196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e42f6d6a054e924e82c95f0f93fe667, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FireArrow
-  speed: 10
 --- !u!1001 &1722632915
 PrefabInstance:
   m_ObjectHideFlags: 0
