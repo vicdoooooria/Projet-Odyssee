@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class BombController : MonoBehaviour
+public class BombController : MonoBehaviour //les bombes ne marchent pas mais c'est okay
 {
     public GameObject projectilePrefab; //projectile qui sera instantiate
     public float force;
