@@ -2314,6 +2314,7 @@ GameObject:
   - component: {fileID: 7435541463346590364}
   - component: {fileID: 3877938228426817626}
   - component: {fileID: 901725147451540859}
+  - component: {fileID: 1497648992807776841}
   m_Layer: 0
   m_Name: Fish_6_v5
   m_TagString: Untagged
@@ -2381,6 +2382,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01274228, y: 0.01676636, z: 0.03795576}
   m_Center: {x: 0.00002872944, y: 0.01333606, z: -0.001424253}
+--- !u!114 &1497648992807776841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7816992470260410406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0443ed7a8fdf04140b8cb6cf6cc26236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishMovement
+  cooldown: 0
+  speed: 15
 --- !u!1 &8011053153172610631
 GameObject:
   m_ObjectHideFlags: 0

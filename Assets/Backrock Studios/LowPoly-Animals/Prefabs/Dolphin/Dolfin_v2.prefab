@@ -234,6 +234,8 @@ GameObject:
   - component: {fileID: 3258556469132899595}
   - component: {fileID: 3076537598133399017}
   - component: {fileID: 6262321327587428788}
+  - component: {fileID: 6984075771442979140}
+  - component: {fileID: -482472527138768185}
   m_Layer: 0
   m_Name: Dolfin_v2
   m_TagString: Untagged
@@ -251,8 +253,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 30, y: 30, z: 30}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1289978914814509677}
   - {fileID: 6055491559819576266}
@@ -301,6 +303,42 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.02566099, y: 0.0521391, z: 0.1528644}
   m_Center: {x: 0.001624584, y: 0.05383239, z: -0.01238206}
+--- !u!114 &6984075771442979140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770671946051350449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e5c190eee3d8614b8b626785990c5d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DolphinMovement
+  speed: 5
+  rotationSpeed: 100
+  circleDuration: 3
+  straightDuration: 2
+  maxCycles: 2
+  cooldown: 0
+--- !u!114 &-482472527138768185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2770671946051350449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d8ec2e00a03364d8643dde78199671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  enemyPrefab: {fileID: 2770671946051350449}
+  posY: -30
+  maxPosX: 25.2
+  minPosX: -11.94
+  height: -10.17
+  cooldown: 5
 --- !u!1 &3138262623535800300
 GameObject:
   m_ObjectHideFlags: 0

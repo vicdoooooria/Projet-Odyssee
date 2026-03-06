@@ -4,17 +4,18 @@ public class EnemySpawner : MonoBehaviour
 {
 
      public GameObject enemyPrefab; 
-    public float posX; 
-    public float maxPosY, minPosY; 
+    public float posY; 
+    public float maxPosX, minPosX; 
     public float height;
     public float cooldown;
 
 
     private float remainingCooldown;
 
-    void Start()
+    private void Start()
     {
         remainingCooldown = cooldown;
+        SpawnEnemy();
     }
 
     void Update()
@@ -30,7 +31,8 @@ public class EnemySpawner : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Vector3 SpawnPos = new Vector3(Random.Range(minPosY, maxPosY), height ,posX);
-        
+        Vector3 spawnPos = new Vector3(Random.Range(minPosX, maxPosX), height ,posY);
+        print("Spawn at " + spawnPos);
+        Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
     }
 }

@@ -1636,6 +1636,8 @@ GameObject:
   - component: {fileID: 5092005871559807349}
   - component: {fileID: 1111541105807942196}
   - component: {fileID: 2359230873244000355}
+  - component: {fileID: 3119543891169736738}
+  - component: {fileID: -253851347686800560}
   m_Layer: 0
   m_Name: Fish_6_v3
   m_TagString: Untagged
@@ -1703,6 +1705,38 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01274228, y: 0.01676636, z: 0.03795576}
   m_Center: {x: 0.00002872944, y: 0.01333606, z: -0.001424253}
+--- !u!114 &3119543891169736738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611943563504307151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0443ed7a8fdf04140b8cb6cf6cc26236, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FishMovement
+  cooldown: 0
+  speed: 15
+--- !u!114 &-253851347686800560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5611943563504307151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89d8ec2e00a03364d8643dde78199671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawner
+  enemyPrefab: {fileID: 1425788600504252202, guid: 24df35fe4fc5c37468b8278d488edebe, type: 3}
+  posY: -30
+  maxPosX: 25.2
+  minPosX: -11.94
+  height: -10.17
+  cooldown: 5
 --- !u!1 &5671953506682076590
 GameObject:
   m_ObjectHideFlags: 0
