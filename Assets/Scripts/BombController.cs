@@ -14,19 +14,16 @@ public class BombController : MonoBehaviour
         if(clickAction.action.triggered)
         {
             Vector2 mousePosition = mousePositionAction.action.ReadValue<Vector2>();
-            //converti la position de la souris a l'ecran, en position dans le registre du world
             Vector3 camToWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(mousePosition.x, mousePosition.y, 10));
-            
-            print("mouse position = " + mousePosition + "world position = " + camToWorldPosition);
-            SpawnProjectile(camToWorldPosition); //spawn un projectile a la position fournie en param1
+            SpawnProjectile(camToWorldPosition);
         }
     }
 
-    void SpawnProjectile(Vector3 spawnPos) //prend un vector3 en parametre, correspond a la position du instatiate
+    void SpawnProjectile(Vector3 targetPosition)
     {
-        GameObject projectileSpawned = Instantiate(projectilePrefab, spawnPos, Quaternion.identity); //spawn du projectile et on le stocke dans une variable locale
-        
-        Rigidbody2D rigid = projectileSpawned.GetComponent<Rigidbody2D>(); //recupere le ridid body du boulet
-        rigid.AddForce(Vector3.right * force); //acces a la fonction addForce du Rigidbody
+        GameObject projectileSpawned = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
+        Rigidbody2D rigid = projectileSpawned.GetComponent<Rigidbody2D>();
+        Vector3 direction = (targetPosition - transform.position).normalized;
+        rigid.AddForce(direction * force, ForceMode2D.Impulse);
     }
 }
